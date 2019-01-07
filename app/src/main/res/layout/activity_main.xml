@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <!--
+                              <Button
+                                  android:id="@+id/rev_button"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="left"
+                                  android:layout_marginLeft="5dip"
+                                  android:background="@drawable/round_button"
+                                  android:text="Receive"
+                                  android:textSize="25sp" />
+                                    -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/play_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dip"
+                    android:background="@mipmap/round_button"
+                    android:visibility="invisible"
+                    android:text="Play Local File"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="60dip"
+                    android:layout_height="32dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:background="@mipmap/round_button_1"
+                    android:text="Save"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+</FrameLayout>
